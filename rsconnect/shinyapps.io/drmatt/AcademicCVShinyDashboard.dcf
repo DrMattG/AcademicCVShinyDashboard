@@ -1,0 +1,13 @@
+name: AcademicCVShinyDashboard
+title: AcademicCVShinyDashboard
+username:
+account: drmatt
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1041464
+bundleId: 2247377
+url: https://drmatt.shinyapps.io/AcademicCVShinyDashboard/
+when: 1563542022.08401
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Data_save.R
