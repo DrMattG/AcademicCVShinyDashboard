@@ -7,6 +7,7 @@ library(timevis)
 library(tm)
 library(wordcloud)
 library(rsconnect)
+library(readr)
 ###########################
 
 #Build shinyapp

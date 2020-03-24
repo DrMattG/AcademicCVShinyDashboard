@@ -1,3 +1,9 @@
+library(scholar)
+library(timevis)
+library(tm)
+library(wordcloud)
+library(rsconnect)
+library(readr)
 GS_id<-"aZ4E5I4AAAAJ&hl"
 profile<-get_profile(GS_id)
 cite.yr<-get_citation_history(GS_id)
@@ -7,6 +13,7 @@ saveRDS(profile, "Profile.RDS")
 saveRDS(cite.yr, "citeyr.RDS")
 saveRDS(pubs, "pubs.RDS")
 saveRDS(predH, "predH.RDS")
+WoSpapers <- read_delim("WoSpapers.csv", ";", escape_double = FALSE, trim_ws = TRUE)
 # Define the folder where the text files are
 a <-Corpus(VectorSource(WoSpapers$AB))
 a
