@@ -5,9 +5,9 @@ account: drmatt
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 1041464
-bundleId: 2917095
+bundleId: 2917153
 url: https://drmatt.shinyapps.io/AcademicCVShinyDashboard/
-when: 1585038542.98
+when: 1585039718.28139
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: Data_save.R
