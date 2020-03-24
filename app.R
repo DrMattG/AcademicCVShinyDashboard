@@ -142,7 +142,7 @@ sortTable <- reactive({
       ylab("number of citations")+
       xlab("Year")+
       scale_x_continuous(
-        breaks = c(2005,2006,2007,2008,2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017))+
+        breaks = c(2005,2006,2007,2008,2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,2018,2019,2020))+
       theme_classic()
   })
   output$Words<-renderPlot({
