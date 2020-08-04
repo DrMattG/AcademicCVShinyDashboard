@@ -1,5 +1,6 @@
 #Source the datafile (updates it)
-#source("Data_save.R")
+source("code/Data_save.R")
+updateData()
 # load the required packages
 library(shiny)
 require(shinydashboard)

@@ -1,4 +1,3 @@
-updateData<-function(){
 library(scholar)
 library(timevis)
 library(tm)
@@ -52,4 +51,3 @@ timeline_dat <- data.frame(
 
 
 saveRDS(timeline_dat,"timeline_dat.RDS")
-}
