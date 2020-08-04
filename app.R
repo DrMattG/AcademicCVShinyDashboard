@@ -1,6 +1,5 @@
 #Source the datafile (updates it)
-library(here)
-source(paste0(here(),"/Data_save.R"))
+source("Data_save.R")
 # load the required packages
 library(shiny)
 require(shinydashboard)
@@ -149,7 +148,7 @@ sortTable <- reactive({
       theme_classic()
   })
   output$Words<-renderPlot({
-    wordcloud(d$word, d$freq, scale = c(3,1),min.freq=3,colors=brewer.pal(8, "Dark2"))
+    wordcloud(d$word, d$freq, scale = c(3,1),min.freq=8,colors=brewer.pal(8, "Dark2"))
   } )
   output$table <- renderTable(sortTable(), digits = 0)
   output$predictH<-renderPlot({

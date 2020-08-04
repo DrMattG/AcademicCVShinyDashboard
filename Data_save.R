@@ -36,13 +36,18 @@ myNames <- names(v)
 d <- data.frame(word=myNames, freq=v)
 saveRDS(d, "d.RDS")
 
+today=Sys.Date()
+today=as.Date(today, origin ="1970-01-01")
+
 timeline_dat <- data.frame(
   id      = 1:4,
   content = c("University of Pretoria","World Pheasant Association", "Newcastle University",
               "Norwegian Institute for Nature Research"),
   start   = c("2009-01-01","2011-04-01", "2012-12-01",
               "2019-01-04"),
-  end     = c("2012-01-01","2012-11-01", "2018-12-31",NA)
+  end     = c("2012-01-01","2012-11-01", "2018-12-31",format(today, "%Y-%m-%d"))
 )
+
+
 
 saveRDS(timeline_dat,"timeline_dat.RDS")
