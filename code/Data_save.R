@@ -1,10 +1,11 @@
+updateData<-function(){
 library(scholar)
 library(timevis)
 library(tm)
 library(wordcloud)
 library(rsconnect)
 library(readr)
-GS_id<-"aZ4E5I4AAAAJ&hl"
+GS_id<-Sys.getenv("GS_id")
 profile<-get_profile(GS_id)
 cite.yr<-get_citation_history(GS_id)
 pubs<-get_publications(GS_id)
@@ -51,3 +52,4 @@ timeline_dat <- data.frame(
 
 
 saveRDS(timeline_dat,"timeline_dat.RDS")
+}
